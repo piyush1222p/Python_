@@ -42,7 +42,7 @@ Contributions are welcome! Please follow these guidelines:
 5. Open a pull request.
 
 ## License
-This repository is licensed under the [GNU General Public License Version 3](LICENSE).
+This repository is licensed under the [License](LICENSE).
 
 ## Contact Information
 For any inquiries, please reach out to the project maintainer at [PiyushShukla532@gmail.com]
