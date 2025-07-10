@@ -72,7 +72,7 @@ for i in drinking_buddies:
 
 #Reduce Function:
 #The reduce() function applies a rolling computation to sequential pairs of values in a list.
-from functools import *
+from functools import reduce
 word=["H","E","L","L","O"]
 fun_word=lambda x,y:x+y
 word_join=reduce(fun_word,word)
