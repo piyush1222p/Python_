@@ -51,28 +51,33 @@ print(Piyush.Locality())
 #Child class will inherit all the properties aka attributes and methods of parent class.
 #Inheritance is used to create a new class from an existing class.
 
-class Animal:
-    def alive():
+class BaseAnimal:
+    def alive(self):
         print("The animal is alive")
-    def eat():
+    def eat(self):
         print("The animal is eating")
-class Hawk(Animal):
-    def fly():
+
+class Hawk(BaseAnimal):
+    def fly(self):
         print("The Hawk is flying")
-    def Smart():
+    def Smart(self):
         print("The Hawk is very smart")
-class Lion(Animal):
-    def roar():
+
+class Lion(BaseAnimal):
+    def roar(self):
         print("The Lion is roaring")
-    def King():
+    def King(self):
         print("The Lion is the king of Jungle")
 
-print(Lion.alive())
-print(Lion.eat())
-print(Lion.roar())
-print(Hawk.alive())
-print(Hawk.Smart())
-print(Hawk.fly())
+lion = Lion()
+print(lion.alive())
+print(lion.eat())
+print(lion.roar())
+
+hawk = Hawk()
+print(hawk.alive())
+print(hawk.Smart())
+print(hawk.fly())
 
 #Multi-level Inheritance in Class:
 #In multi-level inheritance, a child class inherits the properties and methods of a parent class and the
