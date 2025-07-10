@@ -23,7 +23,7 @@ lion.eat() #The animal is eating
 #   - It is used to make the code more readable and efficient.
 #   - You need to add return self at every method to call the multiple calling
 
-class Car:
+class SportsCarChaining:
     def start(self):
         print("The car is started")
         return self
@@ -34,12 +34,12 @@ class Car:
         print("The car is stopped")
         return self
 
-buggati=Car()
+buggati=SportsCarChaining()
 buggati.start().Acceleration().Stop() #The car is started The car is accelerating The car
 
 "Also way to do"
 
-ferrari=Car()
+ferrari=SportsCarChaining()
 ferrari.start()\
     .Acceleration()\
     .Stop()
@@ -91,7 +91,7 @@ class Vehicle(ABC):
     @abstractmethod
     def stop(self):
         pass
-class Car(Vehicle):
+class SportsCar(Vehicle):
     def go(self):
         print("Car is going")
     def stop(self):
@@ -103,7 +103,7 @@ class Motorcycle(Vehicle):
         print("Motorcycle is stopped")
 
 #vehicle=Vehicle()
-car=Car()
+car=SportsCar()
 motorcycle=Motorcycle()
 
 #vehicle.go()  #This will give an error because Vehicle class is an abstract class and it does not have any implementation for the method go()
