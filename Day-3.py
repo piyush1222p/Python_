@@ -1,16 +1,18 @@
 #List:
 list=[1,2,3,4,1,5,1,3,1,3]
 list_1=[1,2,3,4,5,6,7,8,9]
+list3 = ["Aman","Kumar"]
 print(type(list))
 print(list)
 print(list[0:])
 print(list[0:len(list)])
 print(list[0:2])
 print(list[2:4])
-list[2] = "Rudra"
+list3[5] = "Rudra"
+list[4] = 2
 print(list)
-list.remove("Rudra")
-list.append("This is my work")
+list3.remove("Rudra")
+list3.append("This is my work")
 print(list)
 list_1.sort()
 print(list_1)
@@ -97,8 +99,8 @@ print(capitals)
 print(capitals.fromkeys("USA"))
 print(capitals.popitem())
 print(capitals)
-print(capitals.setdefault("CHINA"))
-print(capitals.setdefault("USA"))
+print(capitals.setdefault("CHINA","BEIJING"))
+print(capitals.setdefault("USA","WASHINGTON DC"))
 print(capitals.items())
 
 for keys,values in capitals.items():

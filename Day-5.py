@@ -38,11 +38,11 @@ def greet(**kwargs):
     return kwargs
 greet(first="John",last="Doe")
 
-def greet(**kwargs):
+def greet1(**kwargs):
     print("hello",end=" ")
     for key,value in kwargs.items():
         print(value,end=" ")
-greet(first="John",last="Doe")
+greet1(first="John",last="Doe")
 
 def dic(**kwargs):
     print("\nWelcome to the Dictionary")
@@ -95,12 +95,12 @@ try:
 except ZeroDivisionError as e:
     print(e)
     print("You can't divide the numerator by Zero!")
-except Exception as e:
-    print(e)
-    print("Invalid Input!")
 except ValueError as e:
     print(e)
     print("Not a valid input data!")
+except Exception as e:
+    print(e)
+    print("Invalid Input!")
 else:
     print(round(result,3))
 finally:
@@ -159,7 +159,7 @@ try:
         os.replace(src,dst)
         print("The File is successfully replaced ")
 except:
-    print({"The {} doesnot Exist"}.format(src))
+    print({"The {} doesnot Exist"}.__format__(src))
 
 #Deleting a File:
 "This removes the File from the OS"

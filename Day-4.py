@@ -97,11 +97,11 @@ factorail_1(3)
 #Keyword Argument:
 "Until we were working on positional argument"
 "Here in the keyword argumnet we pass the particular identifier for the respective parameter"
-def greeting(first,last,age):
+def greeting1(first,last,age):
     print(f"Hello, {first} {last} you are {age} years old")
     return
-greeting(first="Piyush",last="Shukla",age=20)
-greeting(first="Vibhav",last="Shukla",age=8)
+greeting1(first="Piyush",last="Shukla",age=20)
+greeting1(first="Vibhav",last="Shukla",age=8)
 
 
 #Nested function calls:
@@ -124,11 +124,11 @@ greeting("Piyush")
 
 "Global Version"
 name=input("Enter your name: ")
-def name_1(name):
+def name_2(name):
     print(name)
     return print(f"hello {name}")
 print(name)
-name_1("Piyush")
+name_2("Piyush")
 
 "Local Version"
 def name_1():
